@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Terciario Urquiza</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+</head>
+
+<body>
+  <h1>Ejercicios Log Est Dat</h1>
+
+  <div id="vHola">
+    <h2>Bienvenido</h2>
+    <script>
+      function saludo(name) {
+        return "Hola " + (name || "extraño") + "!" + "Abajo estan las respuestas correspondientes a los ultimos ejercicios de LED";
+      }
+      function hola() {
+        var name = document.getElementById("input").value;
+        var output = saludo(name);
+        document.getElementById("output").innerHTML = output;
+      }
+    </script>
+    <p>
+      Ingresa Tu Nombre: <input id="input" pattern="[A-Za-z]">
+      <button onclick="hola()" type="button" class="btn btn-warning">Click Me!</button>
+    </p>
+    <h3 id="output"></h3>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div id="Unidad2">
+          <a href="ejercicio_1.html">
+            <button type="button" class="btn btn-secondary btn-lg">Click para Ejercicio 1</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div id="Unidad3">
+          <a href="ejercicio_2.html">
+            <button type="button" class="btn btn-secondary btn-lg">Click para Ejercicio 2</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div id="Unidad4">
+          <a href="ejercicio_3.html">
+            <button type="button" class="btn btn-secondary btn-lg">Click para Ejercicio 3</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div id="Unidad5">
+          <a href="ejercicio_4.html">
+            <button type="button" class="btn btn-secondary btn-lg">Click para Ejercicio 4</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div id="Unidad6">
+          <a href="ejercicio_5.html">
+            <button type="button" class="btn btn-secondary btn-lg">Click para Ejercicio 5</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="card text-center">
+    <div class="card-header">
+      <h2> Ejercicios Log Est Dat JavaScript </h2>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Ejercicios:</h5>
+      <p class="card-text">✔ Instrucciones:</p>
+      <p>✔ Realizar el Diagrama (Chapin o Digrama de Flujo) y el codigo JavaScript</p>
+      <p>1. Se tienen como datos las notas de un parcial de 30 alumnos. se desea saber cuántos de ellos obtuvieron una calificación superior al promedio del curso.</p>
+      <p>2. Ingresar una palabra de máximo 10 letras e informar si es un palíndromo (capicúa) Ej.: NEUQUEN </p>
+      <p>3. Ingresar 20 números enteros y ordenarlos decrecientemente.</p>
+      <p>4. Se ingresan 30 números enteros. ordenarlos en forma creciente. ingresar un valor N y decir si se encuentra en el array (en caso afirmativo, indicar la posición).</p>
+      <p>5. Idem punto 4 pero con búsqueda dicotómica.</p>
+    </div>
+    <div class="card-footer text-muted">
+      01/01/2020 ©Milton Maurenzi.
+    </div>
+  </div>
+</body>
+
+</html>
